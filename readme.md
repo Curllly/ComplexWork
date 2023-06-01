@@ -11,22 +11,23 @@ public abstract class BaseEncryptionAlgorithm() {
 
 Далее необходимо реализовать в своём классе два метода: шифровку и расшифровку. Так же класс должен иметь ключ в конструкторе. Примерный вид вашего класса:
 ```csharp
-public class CezarEncrypt(int key) : BaseEncryptionAlgorithm
+public class CezarEncrypt : BaseEncryptionAlgorithm
 {
-        public string Encrypt(string input) 
-        {
-            /*
-                Ваша реализация шифрования
-            */
-            return result;
-        }
-        public string Decrypt(string input) 
-        {
-            /*
-                Ваша реализация шифрования
-            */
-            return result;
-        }
+    public int Key { get; set; }
+    public string Encrypt(string input) 
+    {
+        /*
+            Ваша реализация шифрования
+        */
+        return result;
+    }
+    public string Decrypt(string input) 
+    {
+        /*
+            Ваша реализация шифрования
+        */
+        return result;
+    }
 }
 ```
 Далее необходимо скинуть ваш класс Никите или Паше.
